@@ -6,7 +6,7 @@ import TotalPrice from '../components/TotalPrice';
 
 function Cart(props) {
     const { cart, dispatch } = props;
-    const { cartProductsList, count } = cart;
+    const { cartProductsList } = cart;
 
     return (
         <Container>

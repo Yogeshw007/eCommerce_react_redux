@@ -13,7 +13,7 @@ export const UPDATE_PRODUCT_QUANTITY_IN_CART = 'UPDATE_PRODUCT_QUANTITY_IN_CART'
 // action creators
 export function fetchProducts(sortOrder) {
     return function (dispatch) {
-        let products = new Array();
+        let products = [];
         if (sortOrder) {
             db
                 .collection("products")

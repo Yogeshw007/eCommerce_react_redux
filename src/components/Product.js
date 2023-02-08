@@ -13,8 +13,8 @@ function Product(props) {
     const [description, setDescription] = useState(product.description);
     const [price, setPrice] = useState(product.price);
     const [rating, setRating] = useState(product.rating);
-    const [id, setId] = useState(product.id);
-    const [image, setImage] = useState(product.image);
+    const [id] = useState(product.id);
+    const [image] = useState(product.image);
     const [editMode, setEditMode] = useState(false);
     const [addToCart, setAddToCart] = useState(false);
 

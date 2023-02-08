@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { addProductToCart, fetchProducts } from '../actions';
+import { fetchProducts } from '../actions';
 import Product from '../components/Product';
-import { notifyProductAddedToCartMessage } from '../utils';
 
 function Products(props) {
     const { dispatch, products } = props;
