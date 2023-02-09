@@ -5,6 +5,12 @@ Products can be added from product list page or product detail page and cart pag
 
 Project is live in [here](https://dainty-druid-94253c.netlify.app/)
 
+## Pages
+- Product list page
+- Product detail page
+- Cart page
+- Add product page
+
 ## Tools used
 - React
 - Redux
