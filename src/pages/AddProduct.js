@@ -69,7 +69,7 @@ function AddProduct(props) {
                 <Form.Group className="mb-3" controlId="formPrice">
                     <Form.Label><h6>Price</h6></Form.Label>
                     <Form.Control
-                        type="text"
+                        type="number"
                         placeholder="Enter price"
                         required
                         value={price}

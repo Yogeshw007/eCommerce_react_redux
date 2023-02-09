@@ -14,7 +14,6 @@ function Product(props) {
     const [price, setPrice] = useState(product.price);
     const [rating, setRating] = useState(product.rating);
     const [id] = useState(product.id);
-    const [image] = useState(product.image);
     const [editMode, setEditMode] = useState(false);
     const [addToCart, setAddToCart] = useState(false);
 
@@ -24,7 +23,7 @@ function Product(props) {
             description,
             price,
             rating,
-            image
+            image: product.image
         };
 
         dispatch(updateProduct(updatedProduct, product.id, productIndex));
@@ -55,7 +54,7 @@ function Product(props) {
             <Col md>
                 <Link to={`/product/${product.id}`}>
                     <Image
-                        src={image}
+                        src={product.image}
                         alt="product-image"
                         style={{
                             width: 250,
@@ -90,7 +89,7 @@ function Product(props) {
                     <span><b>Price : </b></span>
                     {
                         editMode ?
-                            <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
+                            <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
                             :
                             <span>{product.price}</span>
 
@@ -100,7 +99,7 @@ function Product(props) {
                     <b>Rating : </b>
                     {
                         editMode ?
-                            <input type="text" value={rating} onChange={(e) => setRating(e.target.value)} />
+                            <input type="number" value={rating} onChange={(e) => setRating(e.target.value)} />
                             :
                             <span>{product.rating}</span>
 
