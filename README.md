@@ -6,13 +6,13 @@ Products can be added from product list page or product detail page and cart pag
 Project is live in [here](https://dainty-druid-94253c.netlify.app/)
 
 ## Tools used
--React
--Redux
--react-redux
--redux-persist
--redux-thunk
--firebase
--react-bootstrap
+- React
+- Redux
+- react-redux
+- redux-persist
+- redux-thunk
+- firebase
+- react-bootstrap
 
 ## Available Scripts
 
