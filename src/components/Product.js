@@ -137,6 +137,7 @@ function Product(props) {
                                 </Button>
                                 <Button
                                     variant='light'
+                                    disabled
                                     onClick={() => {
                                         handleDeleteProduct();
                                     }}
